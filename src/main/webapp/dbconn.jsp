@@ -3,9 +3,12 @@
 <%@ page import="java.sql.*"%> 
 <%
 	Connection conn=null; //DB를 연동하여 여러 작업을 수행하기 위해 필요
+	
 	String driver = "oracle.jdbc.driver.OracleDriver";
 	String url = "jdbc:oracle:thin:@localhost:1521:XE";
-		
+	
+	
+	
 	Boolean connect = false;
 		
 	try{

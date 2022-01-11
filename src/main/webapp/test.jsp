@@ -10,15 +10,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>도시 목록 조회</h1>
+	<h1>emp</h1>
 	<table border="1">
 		<tr>
 			<th>empno</th>
 			<th>ename</th>
 			<th>job</th>
+			
 		</tr>
 		<%@include file="dbconn.jsp"%>
 		<% 
+			
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			
