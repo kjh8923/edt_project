@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('http://fonts.googleapis.com/earlyaccess/lato.css');
+@import url('http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    padding: 0 ;
+    margin: 0 auto;
+    text-align: center ;
+    align-items: center ;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap ;
+    min-width: 1200px ;
+    max-width: 2000px ;
+    min-height: 3200px ;
+    max-height: 4000px ;
+    width: 100% ;
+    height: 100% ;
+    font-family: 'Noto Sans KR', 'Lato', 'Spoqa Han Sans', sans-serif;
+}
+
+header {
+    border: 1px solid red;
+    display: flex ;
+    flex-wrap: nowrap;
+    position: fixed ; top: 0;
+    background-color: rgb(12, 12, 12);
+    width: 100% ;
+    height: 3% ;
+    min-width: 1200px ;
+    max-width: 2000px ;
+    min-height: 100px ;
+    font-family: 'Shadows Into Light', cursive; font-weight: 700;
+    z-index: 3;
+    opacity: 0.9;
+}
+
+header > #logo {
+    display: flex ;
+    position: relative;
+    z-index: 1;
+}
+
+
+header > #back_logo {
+    position: fixed ; top: 0;
+    margin: 0 0;
+    z-index: 2;
+}
+
+
+header > #search {
+    display: flex;
+    color: white ; 
+    width: 50% ;
+}
+
+header > #search > input {
+    margin-right: 0;
+    margin-left: 30%;
+    text-align: left;
+    font-size: 15px ;
+    width: 50% ;
+    min-height: 40px ;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(228, 225, 225);
+    
+}
+
+header > #search > input:focus {
+    outline-style: none;
+}
+
+header > #search > input::placeholder {
+    color: rgba(223, 215, 215, 0.932) ;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+header > #search > img {
+    margin-left: 0;
+    cursor: pointer;
+}
+
+header > #menu {
+    width: 40% ;
+    font-size: 1.7em ;
+}
+
+header > #menu > ul {
+    display: flex;
+    width: 70% ;
+}
+
+header > #menu > ul > li {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.897);
+    width: 25% ;
+    height: 100% ;
+    min-height: 100px ;
+    border: 0 0.1 0 0.1 solid rgb(219, 215, 215) ;
+}
+
+
+.box {
+    border: 1px solid red;
+    display: flex ;
+    flex-wrap: nowrap;
+    width: 100% ;
+    height: 15.625% ;
+    min-height: 500px ;
+    max-height: 625px ;
+}
+
+.box:nth-of-type(1) {
+    margin-top: 5.1%;
+}
+
+
+.box > #img_slide > .img_box {
+    display: flex;
+    width: 100% ;
+    height: 100% ;
+    min-height: 500px ;
+    max-height: 625px ;
+    overflow: hidden;
+}
+
+.box > #img_slide > .img_box > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box > #product {
+    width: 100% ;
+    height: 100% ;
+}
+
+.box > #video_box {
+    width: 100% ;
+    height: 100% ;
+    padding: 0 ;
+}
+
+#video_box > iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+
+.box > #event {
+    width: 100% ;
+    height: 100% ;
+}
+
+.box > #img_box {
+    width: 100% ;
+    height: 100% ;
+}
+
+footer {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100% ;
+    height: 18.875% ;
+    min-height: 600px ;
+}
+
+#footer {
+    width: 100% ;
+    height: 100% ;
+}
