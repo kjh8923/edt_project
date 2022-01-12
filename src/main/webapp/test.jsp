@@ -16,6 +16,7 @@
 			<th>empno</th>
 			<th>ename</th>
 			<th>job</th>
+			<th>sal</th>
 			
 		</tr>
 		<%@include file="dbconn.jsp"%>
